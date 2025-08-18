@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./contact.module.css";
+import styles from "./Contact.module.css";
 
 // Optional: use your own hero image or remove the style prop.
 // import contactHero from "../../assets/contact-hero.jpg";
