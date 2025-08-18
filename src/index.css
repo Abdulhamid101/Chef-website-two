@@ -89,7 +89,7 @@ section {
   padding-top: 0 !important;
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
   .All_pages {
   padding: 1rem;
 }
