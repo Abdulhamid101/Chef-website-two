@@ -4,7 +4,7 @@ import serviceImg from "../../assets/oursSrvices.png";
 import serviceImg1 from "../../assets/ourServicesaside1.png";
 import serviceImg2 from "../../assets/ourServicesaside2.png";
 import serviceImg3 from "../../assets/ourServicesaside3.png";
-import serviceImg4 from "../../assets/ourServicesaside4.png";
+import serviceImg4 from "../../assets/ourservicesaside4.png";
 import styles from "./ourServices.module.css";
 
 const OurServices = () => {
