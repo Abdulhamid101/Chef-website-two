@@ -1,0 +1,99 @@
+
+
+.otherServices_section{
+    padding: 4rem 2rem;
+  /* background: linear-gradient(135deg, #f9fafb, #f3f4f6);  */
+  text-align: center;
+}
+
+/* .otherSevices-header {
+  text-align: center;
+  margin: 5rem 0;
+} */
+
+.otherSevices_header h1 {
+ font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  color: #7c1575;
+}
+
+.otherServices_header h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 0.5rem auto 0;
+  border-radius: 999px;
+}
+
+.otherServices_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 0 1rem;
+}
+
+.otherServices_item {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.otherServices_item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#7c1575 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.4;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, transparent 100%);
+  pointer-events: none;
+}
+
+.otherServices_item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.otherServices_item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1; 
+}
+
+.otherServices_item:hover img {
+  transform: scale(1.1);
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+  .otherServices, .otherServices_section{ max-width: 1200px; margin: 0 auto; }
+  .otherServices_container{
+    grid-template-columns: repeat(5, minmax(0,1fr));
+    gap: 28px;
+  }
+  .otherServices_item img{ width: 110px; height: 110px; }
+}
+
+/* Large desktop */
+@media (min-width: 1536px){
+  .otherServices, .otherServices_section{ max-width: 1400px; }
+}

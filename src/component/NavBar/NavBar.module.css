@@ -1,0 +1,140 @@
+:root {
+  --nav-h: 64px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  margin: 1rem;
+  border-radius: 50px;
+}
+
+.nav {
+  max-width: 1200px;
+  color: black;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 46px;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links li a {
+  color: black; /* white over dark hero */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.nav_links li a:hover {
+  color: #ffd7a8;
+}
+
+.nav_btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav_btn button {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav_btn button:hover {
+  background: #e26d00;
+}
+.home_icon {
+  color: black;
+  font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: transparent;
+    margin: 0rem;
+  }
+  .nav_links {
+    position: absolute;
+    top: var(--nav-h);
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    background: rgba(26, 26, 26, 0.96);
+    text-align: center;
+    padding: 20px 0;
+    transition: left 0.25s ease;
+  }
+  .active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .nav_btn {
+    display: none;
+  }
+}
+
+/* Tablet landscape & small laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+  .nav_links {
+    gap: 18px;
+  }
+  .logo img {
+    height: 40px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .nav {
+    max-width: 1200px;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+  .nav_links {
+    gap: 28px;
+  }
+}
+
+/* Large desktop / 2K */
+@media (min-width: 1536px) {
+  .nav {
+    max-width: 1400px;
+  }
+  .nav_links li a {
+    font-size: 1.05rem;
+  }
+}

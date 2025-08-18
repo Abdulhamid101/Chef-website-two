@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #root, */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.All_pages {
+  flex: 1;
+}
+
+.All_pages {
+  padding: 6rem;
+}
+
+.footer-bg {
+  margin: 0;
+  padding: 0;
+}
+
+.header-content {
+  padding: 2rem 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header-bg {
+  background-image: url("./src/assets/headerimg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+
+:root {
+  --nav-h: 64px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* height: var(--nav-h); */
+  background: transparent;
+  z-index: 1000;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  min-height: 100vh;
+  /* background: url('/images/catering-hero.jpg') center/cover no-repeat; */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* padding-top: var(--nav-h); */
+  overflow: auto;
+}
+
+.about-page,
+.menu-page,
+main,
+section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+@media (max-width: 320px){
+  .All_pages {
+  padding: 1rem;
+}
+
+}
