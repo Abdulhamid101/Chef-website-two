@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import styles from "./Navbar.module.css";
+import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 
 export default function Navbar() {
