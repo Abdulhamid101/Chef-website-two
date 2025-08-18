@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import { FiTrash2 } from "react-icons/fi";
 import styles from "./Cart.module.css";
 
-// (Optional) swap in your real images
-// import item1 from "../../assets/menuimg1.jpeg";
-// import item2 from "../../assets/menuimg2.jpeg";
 
 const NGN = (n) => `₦${(n ?? 0).toLocaleString("en-NG")}`;
 

@@ -4,7 +4,6 @@
   color: #333;
 }
 
-/* Heading + intro */
 .specialCat_container {
   text-align: center;
   max-width: 860px;
@@ -35,14 +34,12 @@
   margin-top: 0.75rem;
 }
 
-/* Desktop/tablet grid */
 .menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
-/* Card */
 .menu_item {
   display: flex;
   flex-direction: column;
@@ -123,7 +120,6 @@
   transform: translateY(-2px);
 }
 
-/* Breakpoints (grid) */
 @media (max-width: 1200px) {
   .menu {
     grid-template-columns: repeat(3, 1fr);
@@ -135,44 +131,57 @@
   }
 }
 
-/* Mobile: turn the ONE .menu into a swipe slider */
-@media (max-width: 640px){
-  .menu{
+@media (max-width: 640px) {
+  .menu {
     display: flex;
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    padding: 0 16px 12px;   /* gives breathing room + shows next card peeking */
-    scrollbar-width: none;  /* firefox */
+    padding: 0 16px 12px;
+    scrollbar-width: none;
   }
-  .menu::-webkit-scrollbar{ height: 0; }  /* webkit */
+  .menu::-webkit-scrollbar {
+    height: 0;
+  }
 
-  /* 👇 This is the fix: stop shrinking & set a fixed slide width */
-  .menu_item{
-    flex: 0 0 78%;          /* try 78–85% to taste */
+  .menu_item {
+    flex: 0 0 78%; /* try 78–85% to taste */
     min-width: 78%;
     scroll-snap-align: center;
   }
 
-  .menu_item img{ height: 180px; }
+  .menu_item img {
+    height: 180px;
+  }
 }
 
-/* Tablet landscape */
-@media (min-width: 900px){
-  .menu{ gap: 2.2rem; }
+@media (min-width: 900px) {
+  .menu {
+    gap: 2.2rem;
+  }
 }
 
-/* Desktop */
-@media (min-width: 1200px){
-  .special_cat_section{ max-width: 1200px; margin: 0 auto; }
-  .menu{ grid-template-columns: repeat(4, 1fr); gap: 2.4rem; }
-  .menu_item img{ height: 220px; }
+@media (min-width: 1200px) {
+  .special_cat_section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .menu {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+  }
+  .menu_item img {
+    height: 220px;
+  }
 }
 
-/* Large desktop */
-@media (min-width: 1536px){
-  .special_cat_section{ max-width: 1400px; }
-  .specialCat_container h1{ font-size: 44px; }
+@media (min-width: 1536px) {
+  .special_cat_section {
+    max-width: 1400px;
+  }
+  .specialCat_container h1 {
+    font-size: 44px;
+  }
 }

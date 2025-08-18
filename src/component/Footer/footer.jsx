@@ -17,7 +17,7 @@ const Footer = () => {
       <div className= {styles.footer_bottom}>
         <div className= {styles.footer_bottom_text}>
             <p>
-                Lorem ipsum dolor sit amet, consectetur
+                Ready to spice up your event?
             </p>
         </div>
         <div className= {styles.footer_bottom_links}>

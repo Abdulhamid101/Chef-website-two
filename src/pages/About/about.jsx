@@ -12,8 +12,6 @@ const About = () => {
           Creating Memorable Moments, One Plate at a Time
         </h1>
       </div>
-
-      {/* Who We Are */}
       <div className= {styles.who_we_are}>
         <h2>Who We Are</h2>
         <p>
@@ -24,8 +22,6 @@ const About = () => {
           make every occasion stress-free and full of flavor.
         </p>
       </div>
-
-      {/* Why Choose Us */}
       <div className= {styles.why_choose_us}>
         <div className= {styles.card}>
           <h3>🍽️ Exquisite Menus</h3>
@@ -44,8 +40,6 @@ const About = () => {
           <p>Every detail handled with care.</p>
         </div>
       </div>
-
-      {/* CTA */}
       <div className= {styles.cta}>
         <h2>Let’s make your next event unforgettable</h2>
         <button><Link to="/contact">Contact Us Today</Link></button>

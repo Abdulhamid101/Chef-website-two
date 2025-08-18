@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./feedback.module.css";
+import styles from "./FeedBack.module.css";
 
 export default function Feedback() {
   const [loading, setLoading] = useState(false);

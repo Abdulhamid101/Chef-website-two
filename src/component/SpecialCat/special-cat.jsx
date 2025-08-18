@@ -21,8 +21,7 @@ const SpecialCat = () => {
           experience the perfect blend of flavor and elegance!
         </p>
       </div>
-
-      {/* ONE list containing ALL items */}
+      
       <div className={styles.menu}>
         {/* 1 */}
         <div className={styles.menu_item}>

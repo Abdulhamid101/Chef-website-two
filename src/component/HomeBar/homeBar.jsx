@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./homeBar.module.css";
-// import heroBg from "../../assets/hero-catering.jpg";  // <-- your photo
 
 const HomeBar = () => {
   return (
