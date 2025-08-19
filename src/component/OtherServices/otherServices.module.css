@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+.otherSevices_header{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
 .otherSevices_header h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -33,12 +41,15 @@
 }
 
 .otherServices_item {
+  
   position: relative;
   background: #fff;
+  
   border-radius: 1rem;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -78,6 +89,15 @@
 
 .otherServices_item:hover img {
   transform: scale(1.1);
+}
+
+.otherServices_item p{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 @media (min-width: 1200px) {

@@ -1,4 +1,8 @@
 .special_cat_section {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   padding: clamp(24px, 4vw, 56px) 5%;
   font-family: "Poppins", sans-serif;
   color: #333;
@@ -25,16 +29,21 @@
   width: 70px;
   height: 4px;
   border-radius: 2px;
-  background: #e63946;
+  background: #7c1575;
 }
 .specialCat_container p {
   font-size: clamp(14px, 1.6vw, 16px);
   line-height: 1.65;
-  color: #555;
+  color: black;
   margin-top: 0.75rem;
+  font-size: 16px;
 }
 
 .menu {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -57,8 +66,8 @@
 }
 
 .menu_item img {
-  width: 100%;
-  height: 200px;
+  width: 201px;
+  height: 182px;
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.2s ease;
@@ -73,14 +82,14 @@
   gap: 0.6rem;
 }
 .card .title {
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 600;
   color: #4a4a4a;
 }
 .card .stats {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 12px;
   color: #777;
 }
 .stats .rating {
@@ -96,15 +105,15 @@
 .price {
   font-weight: 700;
   color: #ff9800;
-  font-size: 1rem;
+  font-size: 16px;
 }
 .price .amt {
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-left: 4px;
 }
 
 .btn {
-  background: #ff9800;
+  background: #7c1575;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
@@ -116,7 +125,7 @@
   transition: background 0.2s ease, transform 0.08s ease;
 }
 .card .btn:hover {
-  background: #fcc470;
+  background: #ad6ea9;
   transform: translateY(-2px);
 }
 

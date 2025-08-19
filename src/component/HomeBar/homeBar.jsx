@@ -8,13 +8,13 @@ const HomeBar = () => {
         <div className={styles.circle_text}>
           <p>
             Have a function ? <br />
-            we&apos;ve got the catering <br />
+            we've got the catering <br />
             covered.
           </p>
           <span>Deliciously crafted catering: where every bite tells a story</span>
 
           <div className={styles.circle_btn}>
-            <button className={styles.circle_btn1}>Let&apos;s talk</button>
+            <button className={styles.circle_btn1}>Let's talk</button>
           </div>
         </div>
       </div>

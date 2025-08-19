@@ -22,7 +22,6 @@ export default function Contact() {
   return (
     <section
       className={styles.contact_page}
-      // style={{ "--hero-bg": `url(${contactHero})` }}  // <- uncomment if you import a hero image
     >
       {/* Hero */}
       <header className={styles.hero}>

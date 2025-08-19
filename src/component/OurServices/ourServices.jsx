@@ -19,7 +19,7 @@ const OurServices = () => {
             "Spice up your event with our premium catering services! From intimate gatherings to grand celebrations, we craft delicious, customized menus that delight every palate. Book us today and experience the perfect blend of flavor and elegance!
           </p>
           <div className= {styles.our_services_btn}>
-            <button><Link to ="/book-me">Book Us Now</Link></button>
+            <button><Link to ="/book-me">Book us now</Link></button>
           </div>
         </div>
         <div className= {styles.our_services_right}>

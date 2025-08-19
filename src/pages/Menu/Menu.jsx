@@ -177,8 +177,7 @@ export default function Menu() {
       {/* CTA strip */}
       <div className= {styles.menu_cta}>
         <h2>Planning an event?</h2>
-        <p>We’ll craft a tailored menu your guests will love.</p>
-        {/* Link this to your Book/Contact route */}
+        <p>We’ll craft a tailored menu your guests will love.</p> 
         <button className= {styles.btn_cta} onClick={() => alert("Go to booking")}>
           Book Catering
         </button>

@@ -19,30 +19,35 @@ const OtherServices = () => {
             src= {Other1}
             alt="Service 1"
           />
+          <p>restaurant services </p>
         </div>
         <div className= {styles.otherServices_item}>
             <img
             src= {Other2}
             alt="Service 1"
           />
+          <p>Bulk order</p>
         </div>
         <div className= {styles.otherServices_item}>
             <img
             src= {Other3}
             alt="Service 1"
           />
+          <p>Meals in bowl</p>
         </div>
         <div className= {styles.otherServices_item}>
             <img
             src= {Other4}
             alt="Service 1"
           />
+          <p>Daily office catering</p>
         </div>
         <div className= {styles.otherServices_item}>
             <img
             src= {Other5}
             alt="Service 1"
           />
+          <p>Indoor & outdoor event</p>
         </div>
       </div>
     </section>

@@ -13,28 +13,44 @@ import trays from "../../assets/serviceimg6.jpeg";
 const PACKAGES = [
   {
     title: "Wedding Catering",
-    desc: ["Signature menus & tastings", "Full service staff", "Elegant table setups"],
+    desc: [
+      "Signature menus & tastings",
+      "Full service staff",
+      "Elegant table setups",
+    ],
     from: 250000, // ₦
     img: wedding,
     icon: "💍",
   },
   {
     title: "Corporate Catering",
-    desc: ["Conferences & launches", "Buffets, plated, or boxes", "Dietary options covered"],
+    desc: [
+      "Conferences & launches",
+      "Buffets, plated, or boxes",
+      "Dietary options covered",
+    ],
     from: 150000,
     img: corporate,
     icon: "💼",
   },
   {
     title: "Private Chef & Intimate Dining",
-    desc: ["3–7 course experiences", "On-site chef & service", "Custom wine pairing"],
+    desc: [
+      "3–7 course experiences",
+      "On-site chef & service",
+      "Custom wine pairing",
+    ],
     from: 120000,
     img: privateChef,
     icon: "👨‍🍳",
   },
   {
     title: "Buffet & Live Stations",
-    desc: ["Jollof, grill & pasta bars", "Chef-manned stations", "Guest interaction"],
+    desc: [
+      "Jollof, grill & pasta bars",
+      "Chef-manned stations",
+      "Guest interaction",
+    ],
     from: 180000,
     img: buffet,
     icon: "🍽️",
@@ -48,7 +64,11 @@ const PACKAGES = [
   },
   {
     title: "Meal Trays & Packed Lunches",
-    desc: ["Corporate & crew meals", "Sealed, labeled, on-time", "Bulk discounts"],
+    desc: [
+      "Corporate & crew meals",
+      "Sealed, labeled, on-time",
+      "Bulk discounts",
+    ],
     from: 35000,
     img: trays,
     icon: "🥡",
@@ -57,26 +77,31 @@ const PACKAGES = [
 
 export default function Services() {
   return (
-    <section
-      className={styles.services_page}
-    >
+    <section className={styles.services_page}>
       {/* Hero */}
       <header className={styles.hero}>
         <div className={styles.hero_inner}>
           <p className={styles.kicker}>What we do</p>
           <h1>Catering services for weddings, corporate & private events</h1>
           <p className={styles.sub}>
-            From intimate dinners to large celebrations—we plan, cook, style, and serve.
+            From intimate dinners to large celebrations—we plan, cook, style,
+            and serve.
           </p>
           <div className={styles.hero_actions}>
-            <Link to="/contact" className={styles.btn_primary}>Get a Quote</Link>
-            <a href="#packages" className={styles.btn_ghost}>View Packages</a>
+            <Link to="/contact" className={styles.btn_primary}>
+              Get a Quote
+            </Link>
+            <a href="#packages" className={styles.btn_ghost}>
+              View Packages
+            </a>
           </div>
         </div>
       </header>
 
-      {/* Packages */}
-      <section id="packages" className={`${styles.container} ${styles.packages_section}`}>
+      <section
+        id="packages"
+        className={`${styles.container} ${styles.packages_section}`}
+      >
         <h2>Service Packages</h2>
         <p className={styles.section_sub}>
           Flexible options you can tailor to your guest count, venue, and theme.
@@ -91,20 +116,28 @@ export default function Services() {
                 ) : (
                   <div className={styles.media_placeholder} aria-hidden />
                 )}
-                <span className={styles.badge} aria-hidden>{p.icon}</span>
+                <span className={styles.badge} aria-hidden>
+                  {p.icon}
+                </span>
               </div>
 
               <div className={styles.card_body}>
                 <h3>{p.title}</h3>
                 <ul className={styles.bullets}>
-                  {p.desc.map((d) => <li key={d}>{d}</li>)}
+                  {p.desc.map((d) => (
+                    <li key={d}>{d}</li>
+                  ))}
                 </ul>
 
                 <div className={styles.card_footer}>
                   <div className={styles.price_line}>
                     From <strong>₦{p.from.toLocaleString("en-NG")}</strong>
                   </div>
-                  <Link to="/contact" className={styles.btn_primary} aria-label={`Get quote for ${p.title}`}>
+                  <Link
+                    to="/contact"
+                    className={styles.btn_primary}
+                    aria-label={`Get quote for ${p.title}`}
+                  >
                     Get Quote
                   </Link>
                 </div>
@@ -147,19 +180,31 @@ export default function Services() {
         <div className={styles.faq_list}>
           <details>
             <summary>Do you handle rentals, decor, and staffing?</summary>
-            <p>Yes. We can provide full service: chefs, wait staff, bar, basic decor, and rentals coordination.</p>
+            <p>
+              Yes. We can provide full service: chefs, wait staff, bar, basic
+              decor, and rentals coordination.
+            </p>
           </details>
           <details>
             <summary>Can you accommodate dietary restrictions?</summary>
-            <p>Absolutely—vegan, vegetarian, halal, gluten-free, and allergies. We label everything clearly.</p>
+            <p>
+              Absolutely—vegan, vegetarian, halal, gluten-free, and allergies.
+              We label everything clearly.
+            </p>
           </details>
           <details>
             <summary>What areas do you cover?</summary>
-            <p>Lagos and surrounding areas by default; we can travel for destination events on request.</p>
+            <p>
+              Lagos and surrounding areas by default; we can travel for
+              destination events on request.
+            </p>
           </details>
           <details>
             <summary>What’s the payment schedule?</summary>
-            <p>30–50% deposit to secure your date, balance due 3–5 days before the event.</p>
+            <p>
+              30–50% deposit to secure your date, balance due 3–5 days before
+              the event.
+            </p>
           </details>
         </div>
       </section>
@@ -169,7 +214,9 @@ export default function Services() {
         <div className={styles.cta_inner}>
           <h2>Ready to plan your menu?</h2>
           <p>Let’s craft something delicious for your guests.</p>
-          <Link to="/contact" className={styles.btn_primary}>Book a Tasting</Link>
+          <Link to="/contact" className={styles.btn_primary}>
+            Book a Tasting
+          </Link>
         </div>
       </section>
     </section>

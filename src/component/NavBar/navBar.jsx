@@ -4,12 +4,16 @@ import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
+import headerImg from "../../assets/headerimg.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className={styles.header}>
+      <div className= {styles.hero} style={{ "--header-bg": `url(${headerImg})` }}> 
+        
+      </div>
       <nav className={styles.nav}>
         <div className={styles.logo}>
           <img src={logo} alt="Logo" />
@@ -25,10 +29,11 @@ export default function Navbar() {
 
         <div className={styles.nav_btn}>
           <div className={styles.home_icon}>
-            <Link to="/" ><FaHome /></Link>
+             <Link to="/cart" ><FaShoppingCart/></Link>
+           
             </div>
-          <button type="button">Search</button>
-           <Link to="/cart" ><FaShoppingCart/></Link>
+          <button type="button">Let's talk</button>
+           <Link to="/" ><FaHome /></Link>
         </div>
 
         <button

@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";  
 import styles from "./about.module.css";
+import headerImg from "../../assets/headerimg.png";
 
 const About = () => {
   return (
     <section className= {styles.about_page}>
       <div
         className= {styles.hero}
+        style={{ "--hero-bg": `url(${headerImg})` }}
       >
         <h1>
           Creating Memorable Moments, One Plate at a Time

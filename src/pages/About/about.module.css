@@ -1,18 +1,22 @@
 .about_page {
-  font-family: Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
   color: #333;
 }
 
 .hero {
   position: relative;
   width: 100%;
-  min-height: clamp(220px, 40vh, 420px);
+  min-height: clamp(220px, 70vh, 420px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     var(--hero-bg, #2a2a2a) center/cover no-repeat;
+  margin-top: calc(-1 * 64px);
+  padding-top: 64px;
 }
 
 .hero h1 {
