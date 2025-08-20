@@ -47,7 +47,7 @@
 }
 .highlight {
   font-weight: 700;
-  color: #e6a500;
+  color: #ad31a5;
 }
 
 .why_choose_us {
@@ -85,7 +85,7 @@
   margin: 0 0 16px;
 }
 .cta button {
-  background: #f5b400;
+  background: #ad31a5;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -95,7 +95,7 @@
   transition: background 0.25s ease, transform 0.08s ease;
 }
 .cta button:hover {
-  background: #d49400;
+  background: #ff95f8;
 }
 .cta button:active {
   transform: translateY(1px);

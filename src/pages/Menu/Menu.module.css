@@ -11,7 +11,7 @@
 
 .menu_hero {
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
- position: relative;
+position: relative;
   min-height: min(60vh, 520px);
   display: grid;
   place-items: center;
@@ -58,11 +58,10 @@
   outline: none;
 }
 .menu_search input:focus {
-  border-color: #ff7a00;
-  box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.25);
+  border-color: #ad31a5;
+  box-shadow: 0 0 0 4px #f3a9ee;
 }
 
-/* Tabs (GLOBAL so your JSX `className="tab active"` works with CSS Modules) */
 :global(.tab) {
   border: 1px solid #ddd;
   background: #fff;
@@ -74,13 +73,12 @@
     border-color 0.2s ease;
 }
 :global(.tab.active) {
-  background: #ff7a00;
+  background: #ad31a5;
   color: #fff;
-  border-color: #ff7a00;
-  box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.25);
+  border-color: #ad31a5;
+  box-shadow: 0 0 0 4px #f7b0f2;
 }
 
-/* GRID */
 .menu_grid {
   max-width: 1200px;
   margin: 22px auto 40px;
@@ -142,7 +140,7 @@
 }
 .price {
   font-weight: 800;
-  color: #ff7a00;
+  color: #ad31a5;
 }
 .desc {
   margin: 0;
@@ -156,7 +154,7 @@
   margin-top: 2px;
 }
 .btn_primary {
-  background: #ff7a00;
+  background: #ad31a5;
   color: #fff;
   border: none;
   padding: 10px 14px;
@@ -203,17 +201,22 @@
   color: #5b3a1a;
 }
 .btn_cta {
-  background: #ff7a00;
+  background: #ad31a5;
   color: #fff;
   border: none;
   padding: 12px 18px;
-  border-radius: 999px;
+  border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 .btn_cta:hover {
-  background: var(--brand-dark);
+  background: #ff5ef4;
+}
+
+.btn_cta a{
+  color: black;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {

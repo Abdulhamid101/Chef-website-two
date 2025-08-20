@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Menu.module.css";
 import Menu1 from "../../assets/menuimg1.jpeg"
 import Menu2 from "../../assets/menuimg2.jpeg"
@@ -120,7 +121,6 @@ export default function Menu() {
         </div>
       </div>
 
-      {/* Grid */}
       <div className= {styles.menu_grid}>
         {filtered.map((item) => (
           <article key={item.id} className= {styles.menu_card}>
@@ -167,19 +167,17 @@ export default function Menu() {
         ))}
       </div>
 
-      {/* Empty state */}
       {filtered.length === 0 && (
         <div className= {styles.menu_empty}>
           <p>No dishes found. Try another search or category.</p>
         </div>
       )}
 
-      {/* CTA strip */}
       <div className= {styles.menu_cta}>
         <h2>Planning an event?</h2>
         <p>We’ll craft a tailored menu your guests will love.</p> 
-        <button className= {styles.btn_cta} onClick={() => alert("Go to booking")}>
-          Book Catering
+        <button className= {styles.btn_cta} >
+         <Link to=""> Book Catering</Link>
         </button>
       </div>
     </section>

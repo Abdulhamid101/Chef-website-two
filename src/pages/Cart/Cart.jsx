@@ -38,17 +38,14 @@ export default function Cart() {
 
   return (
     <section className={styles.cart_page}>
-      {/* Hero title */}
       <header className={styles.hero}>
         <div className={styles.hero_inner}>
           <h1>Cart</h1>
         </div>
       </header>
 
-      {/* Cart area */}
       <section className={styles.cart_strip}>
         <div className={`${styles.container} ${styles.grid}`}>
-          {/* Left: list */}
           <div className={styles.list_col}>
             <div className={styles.table_head}>
               <span>Product detail</span>
@@ -104,8 +101,7 @@ export default function Cart() {
               ))}
             </ul>
           </div>
-
-          {/* Right: summary */}
+          
           <aside className={styles.summary_col}>
             <div className={styles.summary_card}>
               <h3>Total</h3>

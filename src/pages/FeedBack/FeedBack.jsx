@@ -19,8 +19,6 @@ export default function Feedback() {
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
-
-    // Simulate sending (replace with API call)
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -32,7 +30,6 @@ export default function Feedback() {
 
   return (
     <section className={styles.feedback_page}>
-      {/* Hero */}
       <header className={styles.hero}>
         <div className={styles.hero_inner}>
           <h1>We value your feedback</h1>
@@ -41,7 +38,6 @@ export default function Feedback() {
       </header>
 
       <div className={`${styles.container} ${styles.grid}`}>
-        {/* Info / Why feedback matters */}
         <aside className={styles.info}>
           <h2>Why your feedback matters</h2>
           <ul className={styles.list}>
@@ -70,11 +66,9 @@ export default function Feedback() {
           <h2>Share your experience</h2>
 
           <form onSubmit={handleSubmit} noValidate>
-            {/* Experience rating (stars) */}
             <fieldset className={styles.fieldset}>
               <legend>Overall rating*</legend>
               <div className={styles.stars} role="radiogroup" aria-label="Overall rating from 1 to 5">
-                {/* Right-to-left trick so sibling selectors fill leftwards */}
                 {[5,4,3,2,1].map((val) => (
                   <React.Fragment key={val}>
                     <input
@@ -107,7 +101,6 @@ export default function Feedback() {
               </div>
             </fieldset>
 
-            {/* Quick checks */}
             <fieldset className={styles.fieldset}>
               <legend>What went well?</legend>
               <div className={styles.chips}>
@@ -120,7 +113,6 @@ export default function Feedback() {
               </div>
             </fieldset>
 
-            {/* Event type & order (optional) */}
             <div className={styles.grid2}>
               <div className={styles.field}>
                 <label htmlFor="event">Event type</label>
@@ -139,7 +131,6 @@ export default function Feedback() {
               </div>
             </div>
 
-            {/* Message */}
             <div className={styles.field}>
               <label htmlFor="message">Tell us more*</label>
               <textarea
@@ -154,13 +145,11 @@ export default function Feedback() {
               {errors.message && <p className={styles.error}>{errors.message}</p>}
             </div>
 
-            {/* Photo upload */}
             <div className={styles.field}>
               <label htmlFor="photo">Add a photo (optional)</label>
               <input id="photo" name="photo" type="file" accept="image/*" />
             </div>
 
-            {/* Contact (optional) */}
             <div className={styles.grid2}>
               <div className={styles.field}>
                 <label htmlFor="name">Name (optional)</label>
@@ -172,13 +161,11 @@ export default function Feedback() {
               </div>
             </div>
 
-            {/* Consent */}
             <label className={styles.consent}>
               <input type="checkbox" name="consent" />
               <span>It’s okay to contact me about my feedback.</span>
             </label>
 
-            {/* Submit */}
             <div className={styles.actions}>
               <button type="submit" className={styles.btn_primary} disabled={loading}>
                 {loading ? "Sending…" : "Submit Feedback"}
