@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./homeBar.module.css";
+import image1 from "../../assets/headerimg.png"
 
 const HomeBar = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={{ "--hero-bg": `url(${image1})` }}>
       <div className={styles.container_circle}>
         <div className={styles.circle_text}>
           <p>

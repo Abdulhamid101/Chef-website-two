@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <header className={styles.header}>
-      <div className= {styles.hero} style={{ "--header-bg": `url(${headerImg})` }}> 
+      <div className= {styles.hero}> 
         
       </div>
       <nav className={styles.nav}>
